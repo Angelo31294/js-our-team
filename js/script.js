@@ -44,4 +44,14 @@ const team = [
 for(let i = 0; i < team.length; i++) {
     const memberTeam = team[i];
     console.log(memberTeam);
-}
+    // 3. Stampare le stesse informazioni su DOM sottoforma di stringhe
+    const listTeam = 
+    `
+    <li>
+        <h3>${memberTeam.fullname}</h3>
+        <p>${memberTeam.job}</p>
+        <img>${memberTeam.image}</img>
+    </li>
+    `
+    document.getElementById('team-list').innerHTML += listTeam;
+};
