@@ -61,7 +61,9 @@ for(let i = 0; i < team.length; i++) {
     const listTeam =
     `
     <li class="memberteam">
-        <div class="memberteam-image">${memberTeam.image}</div>
+        <div class="memberteam-image">
+            <img src="img/${memberTeam.image}">
+        </div>
         <h3 class="memberteam-name">${memberTeam.fullname}</h3>
         <p class="memberteam-jobe">${memberTeam.job}</p>
     </li>
